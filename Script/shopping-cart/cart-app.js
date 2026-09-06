@@ -1,7 +1,7 @@
 //IMPORT
-import { productsGrid } from "./Components/products-grid.js";
-import { cart } from "./Components/cart.js"
-import { localStorage } from "./Components/local-storage.js";
+import { productsGrid } from "./components/products-grid.js";
+import { cart } from "./components/cart.js"
+import { localStorage } from "./components/local-storage.js";
 
 //COMPONENT CODES
 //Render all products when the page first opens.

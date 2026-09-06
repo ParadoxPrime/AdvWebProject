@@ -1,5 +1,5 @@
 //IMPORT
-import { products } from "../Data/dataset.js"; 
+import { products } from "../data/dataset.js"; 
 import { localStorage } from "./local-storage.js";
 
 // Store the selected products and provide cart actions.

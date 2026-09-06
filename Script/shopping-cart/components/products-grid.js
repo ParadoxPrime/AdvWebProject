@@ -1,5 +1,5 @@
 //IMPORT
-import { products } from "../Data/dataset.js";
+import { products } from "../data/dataset.js";
 import { product } from "./product.js";
 import { cart } from "./cart.js";
 

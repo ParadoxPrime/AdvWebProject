@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <!--CSS-->
+    <!--Bootstrap CSS--><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--Bootstrap ICONS--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!--Custom CSS (not used yet)--><link rel="stylesheet" href="styles.css">
+</head>
+
+<!--DB Info
+
+Publishable URL: https://prwqavourcmcbmzgggcu.supabase.co
+Publishable Key: sb_publishable_VAjpM4HC-1-NMxlMQGJfig_P19F2bi6
+
+Template Query: https://<PROJECT_REF>.supabase.co/rest/v1/user-form-table?apikey=<PUBLISHABLE_KEY>
+Query: https://prwqavourcmcbmzgggcu.supabase.co/rest/v1/user-form-table?apikey=sb_publishable_VAjpM4HC-1-NMxlMQGJfig_P19F2bi6
+
+-->
+
+
+
+<body>
+<!--Search Start-->
+<div class="collapse" id="collapseExample">
+    <form class="d-flex" role="search" method="get" action="http://www.google.com/search">
+        <input class="form-control me-2" type="text" name="q" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+</div>
+<!--Search End-->
+
+
+<!--Navbar Start-->
+<div class="liam-header ">
+    
+    <nav class="liam-navbar navbar navbar-expand-lg">
+        <div class="container-fluid">
+        <!--BRAND-->
+        <a class="navbar-brand" href="#"><span class="bi bi-globe fs-2"></span> ITWD6.408</a>
+
+        <!--SEARCH ICON SMALL SCREEN-->
+        <button class="btn d-inline d-lg-none" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <span class="bi bi-search fs-2"></span>
+        </button>
+
+        <!--MOBILE EXPANDER BUTTON-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--NAVBAR MAIN-->
+        <div class="collapse navbar-collapse d-lg-flex justify-content-center text-end text-lg-center fs-4 mt-2" id="navbarNavDropdown">
+            <ul class="navbar-nav float-end">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="forms.html">Forms</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="api.html">webAPI</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="jsdemos.html">JavaScript</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Research</a>
+            </li>
+            </ul>
+        </div>
+            <!--SEARCH ICON FOR BIG SCREEN-->
+            <button class="btn d-none d-lg-inline" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <span class="bi bi-search fs-2"></span>
+            </button>
+        </div>
+  </nav>
+</div>
+<!--Navbar End-->
+
+
+<!--PRIVACY MODAL-->
+<div class="modal" tabindex="-1" id="privacyModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Privacy Policy</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h1>Privacy Policy</h1>
+
+        <p>This Privacy Policy outlines how we collect, store, and use your personal information.</p>
+
+        <h2>Personal Information</h2>
+        <p>Personal information has the same meaning as defined in the Privacy Act 1993. This can include any information that can be used to personally identify you.</p>
+
+        <h2>Types of Personal Information Collected</h2>
+        <p>Types of personal information collected can include, but are not limited to:</p>
+        <ul>
+        <li>Name</li>
+        <li>Address</li>
+        <li>Location</li>
+        <li>Email address</li>
+        <li>Telephone number</li>
+        <li>Age or date of birth</li>
+        <li>Profession</li>
+        </ul>
+
+        <h2>How Information Is Collected</h2>
+        <p>By filling out and submitting any forms on this webpage, you agree that we may collect the information provided by you.</p>
+
+        <h2>Use of Personal Information</h2>
+        <p>The personal information collected from you will be used for research and study purposes, to better understand trends in society.</p>
+
+        <h2>Cookies</h2>
+        <p>Our website uses cookies to enhance your browsing experience. You can disable cookies through your browser settings, but this may affect the functionality of our site.</p>
+
+        <h2>Use of Personal Information for Communication</h2>
+        <p>By providing your email address, you agree to receive follow-up emails, promotional or informational, from us. You can opt out at any time through the unsubscribe link in the emails.</p>
+
+        <h2>Disclosure of Personal Information</h2>
+        <p>We do not sell, trade, or otherwise transfer your personal information to outside parties, except when required by law or to provide services you requested.</p>
+
+        <h2>Protection of Personal Information</h2>
+        <p>We take responsibility for your personal information seriously, and will ensure that the personal information we hold is protected from misuse, loss, or unauthorized access.</p>
+
+        <h2>Your Rights to Access Your Personal Information</h2>
+        <p>You have the right to access, correct, or delete your personal information. You can request this by contacting us through the details provided on our website.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>We reserve the right to update or modify this Privacy Policy at any time. Changes will be posted on this page with an updated effective date.</p>
+
+        <h2>Contact Information</h2>
+        <p>If you have any questions or concerns regarding this Privacy Policy, please contact us at ddang@eit.ac.nz.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--PRIVACY MODAL END-->
+
+
+<!--FORMS BODY-->
+<main style="min-height: 85vh;">
+        <h3>HTML FORM AND GOOGLE FORM</h3>
+        <div class="accordion row align-items-start g-1" id="accordionExample">
+            <!--Group 2 buttons in this division-->
+            <div class="row col-12 col-lg-3 g-1">
+                <h2 class="accordion-header col-6 col-lg-12">
+                    <button class="accordion-button border border-primary" type="button" 
+							data-bs-toggle="collapse" data-bs-target="#collapseOne"
+							aria-expanded="true" aria-controls="collapseOne">
+                        HTML FORM
+                    </button>
+                </h2>
+                <h2 class="accordion-header col-6 col-lg-12">
+                    <button class="accordion-button collapsed border border-primary" type="button" 
+						data-bs-toggle="collapse" data-bs-target="#collapseTwo" 
+                        aria-expanded="false" aria-controls="collapseTwo">
+						GOOGLE FORM
+                    </button>
+                </h2>
+            </div>
+
+            <!--Group 2 content areas here-->
+            <div class="col-12 col-lg-9"> 
+                <div class="accordion-item bg-success">
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        
+                        <!--HTML FORM -->
+                        <div class="accordion-body" style="min-height: 50vh;">
+                            <form name="mobile-techno-form">
+                                <div class="row mb-3">
+                                    <label for="fname" class="col-sm-2 col-form-label">First name</label>
+                                    <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="fname" name="fname" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mb-3">
+                                    <label for="lname" class="col-sm-2 col-form-label">Last name</label>
+                                    <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="lname" name="lname" required>
+                                    </div>
+                                </div>
+
+                                <h5>Address</h5>
+                                <div class="row mb-3">
+                                    <label for="address1" class="col-sm-2 col-form-label">Line 1</label>
+                                    <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="address1" name="address1" required>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label for="address2" class="col-sm-2 col-form-label">Line 2</label>
+                                    <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="address2" name="address2">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label for="towncity" class="col-sm-2 col-form-label">Town/City</label>
+                                    <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="towncity" name="towncity" required>
+                                    </div>
+                                </div>
+
+                                <fieldset class="row mb-3">
+                                    <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                                    <div class="col-sm-10">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="male" checked>
+                                            <label class="form-check-label" for="gridRadios1">MALE</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="female">
+                                            <label class="form-check-label" for="gridRadios2">FEMALE</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="other">
+                                            <label class="form-check-label" for="gridRadios3">OTHER</label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset class="row mb-3">
+                                    <legend class="col-form-label col-sm-2 pt-0">Phone</legend>
+                                    <div class="col-sm-10">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="phoneRadios" id="phoneRadios1" value="windows" checked>
+                                            <label class="form-check-label" for="phoneRadios1">WINDOWS</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="phoneRadios" id="phoneRadios2" value="apple">
+                                            <label class="form-check-label" for="phoneRadios2">APPLE</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="phoneRadios" id="phoneRadios3" value="android">
+                                            <label class="form-check-label" for="phoneRadios3">ANDROID</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="phoneRadios" id="phoneRadios4" value="other">
+                                            <label class="form-check-label" for="phoneRadios4">OTHER</label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+
+                                <div class="row mb-3">
+                                    <div class="dropdown">
+                                        <label for="provider" class="col-sm-2 col-form-label">Mobile Provider</label> 
+                                        <button class="btn btn-secondary dropdown-toggle" id="providerDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Select Provider
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="providerDropdown">
+                                            <li><a class="dropdown-item" href="#" data-value="Skinny">Skinny</a></li>
+                                            <li><a class="dropdown-item" href="#" data-value="2Degrees">2Degrees</a></li>
+                                            <li><a class="dropdown-item" href="#" data-value="Spark">Spark</a></li>
+                                            <li><a class="dropdown-item" href="#" data-value="Vodafone">Vodafone</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                    <!--Provider dropdown select script-->
+                                    <script> 
+                                        document.querySelectorAll('#providerDropdown ~ .dropdown-menu .dropdown-item').forEach(item => {
+                                            item.addEventListener('click', function(e) {
+                                                e.preventDefault();
+                                                document.getElementById('providerDropdown').textContent = this.dataset.value;
+                                            });
+                                        });
+                                    </script>
+                                <div class="row mb-3">
+                                    <label for="studyExplanation" class="col-sm-2 col-form-label">Do you use your phone for study? Please explain:</label>
+                                    <textarea class="col-sm-10 col-form-control" id="studyExplanation" rows="3"></textarea>
+                                </div>
+
+                                
+                                <button type="submit" class="btn btn-primary">SUBMIT</button>
+                                <button type="reset" class="btn btn-secondary">RESET</button>
+                            </form>
+ 
+                        </div>
+                    </div>
+                </div>
+
+                <!--Google Form-->
+                <div class="accordion-item bg-primary">
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" style="min-height: 50vh;">
+                            
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSddFpGhTljFOvKcAklbfooyNxwC2mFGQwMNQO3N0_NNLuKBuA/viewform?embedded=true" width="640" height="834" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+</main>
+<!--BODY END-->
+
+
+<!--FOOTER START-->
+<div class="container-fluid" style="background-color: var(--navbar-color);"><!--Footer Start-->
+  <div class="row">
+    <div class="col-12 col-md-4 border border-black d-flex justify-content-center fs-5">
+          <span class="bi bi-linkedin" style="color:cadetblue"></span>
+          <span class="bi bi-youtube" style="color:red"></span>
+          <span class="bi bi-twitter" style="color:aqua"></span>
+          <span class="bi bi-facebook" style="color:blue"></span>
+          <span class="bi bi-instagram" style="color:blueviolet"></span>
+      </div>
+    <div class="col-8 col-md-4 border border-black d-flex justify-content-center fs-5">@Liam Jensen(EIT)</div>
+    <div class="col-4 col-md-4 border border-black d-flex justify-content-center fs-5">
+      <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#privacyModal">
+        Privacy Policy
+      </button>
+    </div>
+  </div>
+</div>
+<!--Footer End-->
+
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!--JAVASCRIPT TO HANDLE HTML FORM-->
+<script type="module">
+    //--------------------------------------------------------
+    // Supabase client setup – Setup the connection between client - server
+    //--------------------------------------------------------
+    
+    // Import the Supabase client library and create a client instance
+    import {createClient} from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
+    // Replace with your Supabase project URL
+    const supabaseUrl = 'https://prwqavourcmcbmzgggcu.supabase.co';
+    // Replace with your Supabase project API key
+    const supabaseKey = 'sb_publishable_VAjpM4HC-1-NMxlMQGJfig_P19F2bi6';
+    // Create a Supabase client instance
+    const supabase = createClient(supabaseUrl, supabaseKey);
+
+    //--------------------------------------------------------
+    // Handle form submission and insert data into Supabase
+    //--------------------------------------------------------
+    //Get the form element by its name
+    const form = document.forms['mobile-techno-form'];
+    //Add an event listener to the form for the 'submit' event
+    form.addEventListener('submit', async(e) => {
+    //Prevent the default form submission behavior
+    e.preventDefault();
+    //Get the values from the form fields
+    const fname = document.getElementById('fname').value;
+    const lname = document.getElementById('lname').value;
+    const gender = document.querySelector('input[name="gridRadios"]:checked').value;
+
+    const address1 = document.getElementById('address1').value;
+    const address2 = document.getElementById('address2').value;
+    const towncity = document.getElementById('towncity').value;
+
+    const phone = document.querySelector('input[name="phoneRadios"]:checked').value;
+    const provider = document.getElementById('providerDropdown').textContent;
+    const studyExplanation = document.getElementById('studyExplanation').value;
+
+    console.log('data: ' + fname + ' ' + lname + ' ' + gender + ' ' + address1 + ' ' + address2 + ' ' + towncity + ' ' + phone + ' ' + provider + ' ' + studyExplanation);
+
+    //Validate the form data (you can add more validation as needed)
+    if (!fname || !lname || !gender || !address1 || !address2 || !towncity || !phone || !provider || !studyExplanation) {
+    alert('Please fill in all fields.');
+    return;
+    }
+    //Authenticate the user with Supabase (replace with your own email and password)
+    const email = 'jensel4@student.eit.ac.nz'; // Replace with your email
+    const password = '12345'; // Replace with your password
+    // Handle the authentication result
+    authenticateUser(email, password).then((data) => {
+    //If authentication is successful, you can proceed with inserting the data into DB
+    //Call below function insertData to send the data to the supabase API
+    insertData(fname, lname, gender, address1, address2, towncity, phone, provider, studyExplanation);
+    }).catch((error) => {
+    // If authentication fails, log the error and alert the user
+    console.error('Error authenticating user:', error);
+    alert('ERROR! Authentication failed, user account is not correct!');
+    });
+    });
+
+
+    //--------------------------------------------------------
+    //Function to authenticate the user with Supabase using email and password
+    //--------------------------------------------------------
+    async function authenticateUser(email, password) {
+    try {
+    // Attempt to sign in the user with the provided email and password
+    const { data, error } = await supabase.auth.signInWithPassword({
+    email: email,
+    password: password,
+    });
+    // Check for errors and log them to the console
+    if (error) {
+    console.error('Error authenticating user:', error);
+    return null;
+    }
+    // Return the authenticated user data
+    return data;
+    } catch (error) {
+    // Log any unexpected errors to the console
+    console.error('Unexpected error during authentication:', error);
+    return null;
+    }
+}
+
+    //--------------------------------------------------------
+    //"InsertData" function to insert the form data into the 'mobiletechnologyform' table
+    //--------------------------------------------------------
+    //Asynchronous function
+    async function insertData(fname, lname, gender, address1, address2, towncity, phone, provider, studyExplanation) {
+    // Insert the data into the 'mobiletechnologyform' table in Supabase
+    const { data, error } = await supabase
+    .from('user-form-table')
+    .insert([{ fname: fname, lname: lname, gender: gender, address1: address1, address2: address2, towncity: towncity, phone: phone, provider: provider, studyExplanation: studyExplanation }]);
+    // Check for errors and log them to the console
+    if (error) {
+    console.error('Error inserting form data:', error);
+    alert('ERROR! INSERT FAILED!');
+    return null;
+    }
+    // Return the inserted data
+    alert('Data (' + fname + ' ' + lname + ')' + ' inserted successfully!');
+    return data;
+}
+
+</script>
+
+</body>
+</html>

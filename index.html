@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liam Index</title>
+    
+    <!--Bootstrap CSS--><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--Bootstrap ICONS--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!--Custom CSS (not used yet)--><link rel="stylesheet" href="styles.css">
+
+
+  </head>
+<body>
+
+<div class="collapse" id="collapseExample">
+  <form class="d-flex" role="search" method="get" action="http://www.google.com/search">
+    <input class="form-control me-2" type="text" name="q" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+
+</div>
+
+
+<div class="liam-header "> <!--Navbar-->
+    
+    <nav class="liam-navbar navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <!--BRAND-->
+      <a class="navbar-brand" href="#"><span class="bi bi-globe fs-2"></span> ITWD6.408</a>
+
+      <!--SEARCH ICON SMALL SCREEN-->
+      <button class="btn d-inline d-lg-none" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        <span class="bi bi-search fs-2"></span>
+      </button>
+
+      <!--MOBILE EXPANDER BUTTON-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--NAVBAR MAIN-->
+      <div class="collapse navbar-collapse d-lg-flex justify-content-center text-end text-lg-center fs-4 mt-2" id="navbarNavDropdown">
+        <ul class="navbar-nav float-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="forms.html">Forms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="api.html">webAPI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jsdemos.html">JavaScript</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Research</a>
+          </li>
+        </ul>
+      </div>
+        <!--SEARCH ICON FOR BIG SCREEN-->
+        <button class="btn d-none d-lg-inline" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <span class="bi bi-search fs-2"></span>
+        </button>
+    </div>
+  </nav>
+</div>
+
+
+<!--Modal Privacy Policy Start-->
+<div class="modal" tabindex="-1" id="privacyModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Privacy Policy</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h1>Privacy Policy</h1>
+
+        <p>This Privacy Policy outlines how we collect, store, and use your personal information.</p>
+
+        <h2>Personal Information</h2>
+        <p>Personal information has the same meaning as defined in the Privacy Act 1993. This can include any information that can be used to personally identify you.</p>
+
+        <h2>Types of Personal Information Collected</h2>
+        <p>Types of personal information collected can include, but are not limited to:</p>
+        <ul>
+        <li>Name</li>
+        <li>Address</li>
+        <li>Location</li>
+        <li>Email address</li>
+        <li>Telephone number</li>
+        <li>Age or date of birth</li>
+        <li>Profession</li>
+        </ul>
+
+        <h2>How Information Is Collected</h2>
+        <p>By filling out and submitting any forms on this webpage, you agree that we may collect the information provided by you.</p>
+
+        <h2>Use of Personal Information</h2>
+        <p>The personal information collected from you will be used for research and study purposes, to better understand trends in society.</p>
+
+        <h2>Cookies</h2>
+        <p>Our website uses cookies to enhance your browsing experience. You can disable cookies through your browser settings, but this may affect the functionality of our site.</p>
+
+        <h2>Use of Personal Information for Communication</h2>
+        <p>By providing your email address, you agree to receive follow-up emails, promotional or informational, from us. You can opt out at any time through the unsubscribe link in the emails.</p>
+
+        <h2>Disclosure of Personal Information</h2>
+        <p>We do not sell, trade, or otherwise transfer your personal information to outside parties, except when required by law or to provide services you requested.</p>
+
+        <h2>Protection of Personal Information</h2>
+        <p>We take responsibility for your personal information seriously, and will ensure that the personal information we hold is protected from misuse, loss, or unauthorized access.</p>
+
+        <h2>Your Rights to Access Your Personal Information</h2>
+        <p>You have the right to access, correct, or delete your personal information. You can request this by contacting us through the details provided on our website.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>We reserve the right to update or modify this Privacy Policy at any time. Changes will be posted on this page with an updated effective date.</p>
+
+        <h2>Contact Information</h2>
+        <p>If you have any questions or concerns regarding this Privacy Policy, please contact us at ddang@eit.ac.nz.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Modal Privacy Policy End-->
+
+
+<div style="min-height:85vh;"><!--Body Start-->
+  <!--background-color: var(--showcase-color);-->
+  <section class=" showcase-img container-fluid border border-black liam-showcase">
+      <div class="showcase-text">
+        <h2>Advanced Web and Internet Learning Page</h2>
+        <h1>I am Liam Jensen</h1>
+        <p>And I'm a web developer</p>
+      </div>
+  </section>
+  
+  <section class="container-fluid liam-showcase">
+    
+    <!--HALF AND HALF PAGE-->
+    <div class="row" style="min-height:100%;">
+      <!--BIO HALF-PAGE-->
+      <div class="col-12 col-md-6 border border-black liam-bio">
+        <!--HEADER-->
+        <h2>BIO</h2>
+
+        <!--PROFILE IMAGE-->
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <img src="images/portrait-icon.jpg" alt="Portrait" class="img-fluid" id="profile">
+          </div>
+          
+          <!--BIO TEXT-->
+          <div class="col-12 col-md-8">
+            I am Liam Jensen,<br>I am an aspiring software developer currently studying a Bachelors of Computing Systems at EIT.
+          </div>
+        </div>
+        
+      </div> <!--BIO ENDS-->
+
+      <!--WEBTECHNOLOGY HALF-PAGE-->
+      <div class="col-12 col-md-6 border border-black liam-webtech">
+        <h2>MY WEB TECHNOLOGIES</h2>
+        <ol>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Bootstrap</li>
+          <li>PHP</li>
+        </ol>
+      </div><!--WEBTECHNOLOGY ENDS-->
+
+    </div><!--HALF AND HALF ENDS-->
+  </section>
+
+  <section class="container-fluid border border-black liam-competence">
+
+    <h2>MY WEB DEVELOPMENT COMPETENCIES</h2>
+    <div class="row mb-2">    
+      <!--HTML Flip Box-->
+      <div class="col-12 col-md-4 mb-2">
+        <div class="card liam-card">
+          <div class="card-body liam-card-inner">
+            
+            <div class="liam-card-front">
+              <h5 class="card-title">MARK-UP (HTML5)</h5>
+              <img src="images/html5.png" alt="HTML Logo" class="code-img">
+            </div>
+
+            <!--Flip Backplate-->
+            <div class="liam-card-back">
+              <h5 class="card-title">COMPETENCY:</h5>
+              <h4 class="card-text text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></h4>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!--CSS Flip Box-->
+      <div class="col-12 col-md-4 mb-2">
+        <div class="card liam-card">
+          <div class="card-body liam-card-inner">
+            
+            <div class="liam-card-front">
+              <h5 class="card-title">STYLING (CSS3)</h5>
+              <img src="images/CSS3.png" alt="CSS Logo" class="code-img">
+            </div>
+
+             <!--Flip Backplate-->
+            <div class="liam-card-back">
+              <h5 class="card-title">COMPETENCY:</h5>
+              <h4 class="card-text text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></h4>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <!--JS Flip Box-->
+      <div class="col-12 col-md-4 mb-2">
+        <div class="card liam-card">
+          <div class="card-body liam-card-inner">
+            
+            <div class="liam-card-front">
+              <h5 class="card-title">JavaScript</h5>
+              <img src="images/javascript.png" alt="JavaScript Logo" class="code-img">
+            </div>
+
+             <!--Flip Backplate-->
+            <div class="liam-card-back">
+              <h5 class="card-title">COMPETENCY:</h5>
+              <h4 class="card-text text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i></h4>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid border border-black liam-statement">
+    <h2>STATEMENT OF AUTHENTICITY:</h2>
+    <p class="ms-5">
+    I confirm that:
+    <br>This is an original assessment and is entirely my own work.
+    <br>It contains no material previously published or written by another person or myself except where due acknowledgement
+    is made in the text. No material which to a substantial extent, has been submitted for any other academic course, is
+    included without acknowledgement.
+    </p>
+  </section>
+</div><!--Body End-->
+
+<div class="container-fluid" style="background-color: var(--navbar-color);"><!--Footer Start-->
+  <div class="row">
+    <div class="col-12 col-md-4 border border-black d-flex justify-content-center fs-5">
+          <span class="bi bi-linkedin" style="color:cadetblue"></span>
+          <span class="bi bi-youtube" style="color:red"></span>
+          <span class="bi bi-twitter" style="color:aqua"></span>
+          <span class="bi bi-facebook" style="color:blue"></span>
+          <span class="bi bi-instagram" style="color:blueviolet"></span>
+      </div>
+    <div class="col-8 col-md-4 border border-black d-flex justify-content-center fs-5">@Liam Jensen(EIT)</div>
+    <div class="col-4 col-md-4 border border-black d-flex justify-content-center fs-5">
+      <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#privacyModal">
+        Privacy Policy
+      </button>
+    </div>
+  </div>
+</div><!--Footer End-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

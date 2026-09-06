@@ -165,3 +165,65 @@ justify-content: center;
 .liam-card-back {
 transform: rotateY(180deg);
 }
+
+/*CSS for Research page flipcards*/
+.research-img {
+width: 80%;
+height: 200px;
+display: inline-block;
+margin-left: auto;
+margin-right: auto;
+background-color: lightgrey;
+}
+
+
+/*Liam RCard (research cards)*/
+.liam-rcard {
+color:black;
+background-color: rgba(255, 166, 0, 0.700);
+border: 1px solid black;
+border-radius: 1px;
+position: relative;
+width: 100%;
+height: 100%;
+
+margin-top: 20px;
+margin-bottom: 20px;
+display: inline-block;
+}
+
+.liam-rcard:hover {
+    background-color:rgba(255, 255, 0, 0.500);
+}
+
+.liam-rcard-inner {
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.6s;
+transform-style: preserve-3d;
+
+/*Stacks faces on top of each other*/
+display: grid;
+grid-template-areas: "liam-rcard";
+}
+    
+.liam-rcard:hover .liam-rcard-inner {
+transform: rotateY(180deg);
+}
+
+.liam-rcard-front, .liam-rcard-back {
+grid-area: liam-rcard;
+backface-visibility: hidden;
+display: grid;
+justify-content: center;
+}
+
+.liam-rcard-front {
+    /*Bugfix for firefox "bleedthrough flip cards" display issue*/
+    transform: rotateX(0deg);
+}
+
+.liam-rcard-back {
+transform: rotateY(180deg);
+}
